@@ -19,16 +19,16 @@ SNI="${CODESPACE_NAME:-localhost}-443.app.github.dev"
 
 echo ""
 echo "========================================"
-echo "  @Kakoolnews - VLESS Proxy"
+echo "  Elfoo - VLESS Proxy"
 echo "========================================"
 echo ""
 echo "VLESS links (try each IP, use whichever works best):"
 echo ""
-echo "vless://${UUID}@94.130.50.12:443?encryption=none&security=tls&type=ws&sni=${SNI}&path=%2F#@Kakoolnews"
+echo "vless://${UUID}@94.130.50.12:443?encryption=none&security=tls&type=ws&sni=${SNI}&path=%2F#Elfoo"
 echo ""
-echo "vless://${UUID}@63.141.252.203:443?encryption=none&security=tls&type=ws&sni=${SNI}&path=%2F#@Kakoolnews"
+echo "vless://${UUID}@63.141.252.203:443?encryption=none&security=tls&type=ws&sni=${SNI}&path=%2F#Elfoo"
 echo ""
-echo "vless://${UUID}@50.7.5.83:443?encryption=none&security=tls&type=ws&sni=${SNI}&path=%2F#@Kakoolnews"
+echo "vless://${UUID}@50.7.5.83:443?encryption=none&security=tls&type=ws&sni=${SNI}&path=%2F#Elfoo"
 echo ""
 echo "========================================"
 echo ""
@@ -37,6 +37,6 @@ echo ""
 XRAY_PID=$!
 
 while kill -0 "$XRAY_PID" 2>/dev/null; do
-    echo "[@Kakoolnews] alive - $(date '+%H:%M:%S')"
+    echo "[Elfoo] alive - $(date '+%H:%M:%S')"
     sleep 300
 done
